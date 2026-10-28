@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --snowfall: #fffbf7;
+  --paper: #fbf8f1;
+  --kraft: #ebdcc9;
+  --snickerdoodle: #bda186;
+  --berry: #a10b0b;
+  --santa: #7d0a00;
+  --wine: #530400;
+  --evergreen: #1a3b16;
+  --mistletoe: #081c06;
+  --gold: #c89d53;
+  --gold-light: #f3dfb7;
+  --charcoal: #2a2523;
+  --muted: #6f6762;
+  --flake-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg stroke='%23fffbf7' stroke-opacity='.11' stroke-width='1.8' fill='none'%3E%3Cpath d='M45 8v74M8 45h74M18 18l54 54M72 18L18 72'/%3E%3Cpath d='M45 30l-6-6M45 30l6-6M45 60l-6 6M45 60l6 6'/%3E%3C/g%3E%3C/svg%3E");
+  --flake-warm: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg stroke='%23a10b0b' stroke-opacity='.06' stroke-width='1.8' fill='none'%3E%3Cpath d='M45 8v74M8 45h74M18 18l54 54M72 18L18 72'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.bg-festive-berry {
+  background: var(--flake-light),
+    radial-gradient(circle at 15% 10%, #c8201a 0%, transparent 45%),
+    linear-gradient(160deg, #8a0b0b, #530400);
+}
+
+.bg-festive-evergreen {
+  background: var(--flake-light),
+    radial-gradient(circle at 85% 90%, #2e5e27 0%, transparent 50%),
+    linear-gradient(170deg, #1a3b16, #081c06);
+}
+
+.bg-festive-cream {
+  background: var(--flake-warm), linear-gradient(180deg, #fffbf7, #f6efe2);
+}
+
+.bg-festive-kraft {
+  background: var(--flake-warm), linear-gradient(180deg, #f3dfb7, #ebdcc9);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f6efe2;
+}
+::-webkit-scrollbar-thumb {
+  background: #bda186;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7d0a00;
+}
